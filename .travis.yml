@@ -11,6 +11,8 @@ rvm:
   - jruby-19mode
   - rbx
 
+bundler_args: --without development
+
 matrix:
   allow_failures:
     - rvm: rbx
