@@ -12,7 +12,3 @@ rvm:
   - rbx
 
 bundler_args: --without debug
-
-matrix:
-  allow_failures:
-    - rvm: rbx
