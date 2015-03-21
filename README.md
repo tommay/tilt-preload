@@ -9,9 +9,9 @@ by tilt 2.x when it autoloads its tilt/* helper files.
 
 Tilt is correct that autoloading these files isn't thread safe.  This
 gem works by loading the necessary files at require time.  Put
-"tilt-preload" in your gemspec and +require "tilt-preload"+ in your
-code instead of +require "tilt"+.  Require any template engines before
-+require "tilt-preload"+:
+"tilt-preload" in your Gemfile and require "tilt-preload" in your
+code instead of require "tilt".  Require any template engines before
+require "tilt-preload":
 
 ```
 require "haml"
@@ -30,7 +30,7 @@ require "redcarpet"
 require "angelo"
 ```
 
-There's a (pull request)[https://github.com/rtomayko/tilt/pull/253]
-open for tilt to include thie functionality but I can't wait forever
-for it to be accepted or declined so I made this silly gem in the
+There's a [pull request](https://github.com/rtomayko/tilt/pull/253)
+open for tilt to include this functionality but I can't wait forever
+for it to be accepted or rejected so I made this silly gem in the
 interim.
